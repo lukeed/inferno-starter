@@ -1,0 +1,24 @@
+{
+  "name": "inferno-starter",
+  "version": "0.0.0",
+  "description": "A Webpack2 starter for Inferno front-end apps",
+  "license": "MIT",
+  "repository": "lukeed/inferno-starter",
+  "author": {
+    "name": "Luke Edwards",
+    "email": "luke.edwards05@gmail.com",
+    "url": "https://lukeed.com"
+  },
+  "scripts": {
+    "build": "prod build",
+    "start": "serve -s dist",
+    "watch": "dev build + server"
+  },
+  "dependencies": {
+    "inferno": "^1.0.3"
+  },
+  "devDependencies": {
+    "serve": "^2.1.2",
+    "webpack": "beta"
+  }
+}
