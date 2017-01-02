@@ -12,6 +12,7 @@ const isProd = (env === 'production');
 const plugins = [
 	new V8LazyParse(),
 	new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify(env)}),
+	new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
 	new HTML({template: 'src/index.html'})
 ];
 

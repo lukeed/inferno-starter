@@ -12,6 +12,7 @@ if (isProd) {
 module.exports = {
 	entry: {
 		app: './src/index.js',
+		vendor: ['inferno']
 	},
 	output: {
 		path: out,
