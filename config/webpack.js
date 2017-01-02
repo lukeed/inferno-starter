@@ -54,6 +54,7 @@ module.exports = {
 		}]
 	},
 	plugins: plugins,
+	devtool: !isProd && 'eval',
 	devServer: {
 		port: process.env.PORT || 3000,
 		contentBase: out
