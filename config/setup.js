@@ -14,14 +14,14 @@ const plugins = [
 	new V8LazyParse(),
 	new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify(env)}),
 	new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
-	new HTML({template: 'src/index.html'}),
-	new ExtractText('styles.[hash].css')
+	new HTML({template: 'src/index.html'})
 ];
 
 if (isProd) {
 	plugins.push(
 		new webpack.LoaderOptionsPlugin({minimize: true, debug: false}),
 		new webpack.optimize.UglifyJsPlugin(uglify),
+		new ExtractText('styles.[hash].css'),
 		new SWPrecache({
 			cacheId: 'inferno-starter',
 			filename: 'service-worker.js',

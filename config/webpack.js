@@ -27,11 +27,10 @@ module.exports = {
 			options: babel
 		}, {
 			test: /\.s(a|c)ss$/,
-			// loader: ['style-loader', ]
-			loader: ExtractText.extract({
+			loader: isProd ? ExtractText.extract({
 				fallbackLoader: 'style-loader',
 				loader: ['css-loader', 'sass-loader']
-			})
+			}) : ['style-loader', 'css-loader', 'sass-loader']
 		}]
 	},
 	plugins: plugins,
