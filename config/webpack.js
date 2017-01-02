@@ -1,6 +1,8 @@
 const webpack = require('webpack');
 const V8LazyParse = require('v8-lazy-parse-webpack-plugin');
+const SWPrecache = require('sw-precache-webpack-plugin');
 const HTML = require('html-webpack-plugin');
+
 const uglify = require('./uglify');
 const babel = require('./babel');
 
@@ -21,7 +23,13 @@ if (isProd) {
 	babel.presets.push('babili');
 	plugins.push(
 		new webpack.LoaderOptionsPlugin({minimize: true, debug: false}),
-		new webpack.optimize.UglifyJsPlugin(uglify)
+		new webpack.optimize.UglifyJsPlugin(uglify),
+		new SWPrecache({
+			cacheId: 'inferno-starter',
+			filename: 'service-worker.js',
+			dontCacheBustUrlsMatching: /./,
+			staticFileGlobsIgnorePatterns: [/\.(html|map)$/]
+		})
 	);
 }
 
