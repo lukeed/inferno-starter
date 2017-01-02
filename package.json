@@ -15,7 +15,7 @@
     "watch": "webpack-dev-server --config config/webpack"
   },
   "dependencies": {
-    "inferno": "^1.0.3"
+    "inferno": "^1.0.4"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
