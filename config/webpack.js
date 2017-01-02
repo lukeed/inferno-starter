@@ -1,4 +1,5 @@
 const { join } = require('path');
+const ExtractText = require('extract-text-webpack-plugin');
 const { isProd, plugins } = require('./setup');
 const babel = require('./babel');
 
@@ -26,7 +27,11 @@ module.exports = {
 			options: babel
 		}, {
 			test: /\.s(a|c)ss$/,
-			use: ['style-loader', 'css-loader', 'sass-loader']
+			// loader: ['style-loader', ]
+			loader: ExtractText.extract({
+				fallbackLoader: 'style-loader',
+				loader: ['css-loader', 'sass-loader']
+			})
 		}]
 	},
 	plugins: plugins,
