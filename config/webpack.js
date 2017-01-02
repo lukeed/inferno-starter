@@ -11,7 +11,7 @@ const out = join(__dirname, '../dist');
 const exclude = /(node_modules|bower_components)/;
 
 const env = process.env.NODE_ENV || 'development';
-const isProd = env === 'production' || process.argv.indexOf('-p') !== -1;
+const isProd = env === 'production';
 
 // base plugins array
 const plugins = [
