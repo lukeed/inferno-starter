@@ -56,7 +56,10 @@ module.exports = {
 	plugins: plugins,
 	devtool: !isProd && 'eval',
 	devServer: {
+		contentBase: out,
 		port: process.env.PORT || 3000,
-		contentBase: out
+		historyApiFallback: true,
+		compress: isProd,
+		inline: !isProd
 	}
 };
