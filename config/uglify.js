@@ -1,17 +1,16 @@
 module.exports = {
 	output: {
-		comments: false
+		comments: 0
 	},
 	compress: {
-		warnings: false,
-		conditionals: true,
-		unused: true,
-		comparisons: true,
-		sequences: true,
-		dead_code: true,
-		evaluate: true,
-		if_return: true,
-		join_vars: true,
-		negate_iife: false // because of `v8LazyParse()`
+		unused: 1,
+		warnings: 0,
+		comparisons: 1,
+		conditionals: 1,
+		negate_iife: 0, // <- for `v8LazyParse()`
+		dead_code: 1,
+		if_return: 1,
+		join_vars: 1,
+		evaluate: 1
 	}
 }
