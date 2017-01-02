@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --config config/webpack",
-    "start": "serve -s dist",
+    "start": "serve dist -s",
     "watch": "webpack-dev-server --config config/webpack"
   },
   "dependencies": {
