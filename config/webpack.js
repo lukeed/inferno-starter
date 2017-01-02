@@ -1,5 +1,6 @@
-const V8LazyParse = require('v8-lazy-parse-webpack-plugin');
 const webpack = require('webpack');
+const V8LazyParse = require('v8-lazy-parse-webpack-plugin');
+const HTML = require('html-webpack-plugin');
 const uglify = require('./uglify');
 const babel = require('./babel');
 
@@ -12,9 +13,8 @@ const isProd = env === 'production' || process.argv.indexOf('-p') !== -1;
 // base plugins array
 const plugins = [
 	new V8LazyParse(),
-	new webpack.DefinePlugin({
-		'process.env.NODE_ENV': JSON.stringify(env)
-	})
+	new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify(env)}),
+	new HTML({template: 'src/index.html'})
 ];
 
 if (isProd) {
@@ -30,19 +30,12 @@ module.exports = {
 		app: './src/index.js',
 	},
 	output: {
-		path: `${out}/assets`,
+		path: out,
 		filename: '[name].[chunkhash].js',
 		publicPath: '/assets'
 	},
 	module: {
 		rules: [{
-			test: /\.html$/,
-			exclude: exclude,
-			loader: 'file-loader',
-			query: {
-				name: '[name].[ext]'
-			}
-		}, {
 			test: /\.jsx?$/,
 			exclude: exclude,
 			loader: 'babel-loader',
