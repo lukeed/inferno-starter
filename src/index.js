@@ -1,6 +1,7 @@
 import Inferno from 'inferno';
-import App from './tags/app';
 import './index.sass';
+
+import App from './tags/app';
 
 Inferno.render(<App />, document.getElementById('app'));
 
