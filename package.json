@@ -10,15 +10,27 @@
     "url": "https://lukeed.com"
   },
   "scripts": {
-    "build": "prod build",
+    "build": "webpack -p --config config/webpack",
     "start": "serve -s dist",
-    "watch": "dev build + server"
+    "watch": "webpack --config config/webpack"
   },
   "dependencies": {
     "inferno": "^1.0.3"
   },
   "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-inferno": "^1.4.0",
+    "babel-preset-babili": "^0.0.9",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
+    "node-sass": "^4.1.1",
+    "sass-loader": "^4.1.1",
     "serve": "^2.1.2",
+    "style-loader": "^0.13.1",
+    "v8-lazy-parse-webpack-plugin": "^0.3.0",
     "webpack": "beta"
   }
 }
