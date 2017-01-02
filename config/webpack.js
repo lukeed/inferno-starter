@@ -32,6 +32,11 @@ if (isProd) {
 			staticFileGlobsIgnorePatterns: [/\.(html|map)$/]
 		})
 	);
+} else {
+	// dev only
+	plugins.push(
+		new webpack.HotModuleReplacementPlugin()
+	);
 }
 
 module.exports = {
@@ -40,7 +45,7 @@ module.exports = {
 	},
 	output: {
 		path: out,
-		filename: '[name].[chunkhash].js'
+		filename: '[name].[hash].js'
 	},
 	module: {
 		rules: [{
@@ -60,6 +65,7 @@ module.exports = {
 		port: process.env.PORT || 3000,
 		historyApiFallback: true,
 		compress: isProd,
-		inline: !isProd
+		inline: !isProd,
+		hot: !isProd
 	}
 };
