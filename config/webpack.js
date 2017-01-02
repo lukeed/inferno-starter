@@ -1,3 +1,4 @@
+const { join } = require('path');
 const webpack = require('webpack');
 const V8LazyParse = require('v8-lazy-parse-webpack-plugin');
 const SWPrecache = require('sw-precache-webpack-plugin');
@@ -6,7 +7,7 @@ const HTML = require('html-webpack-plugin');
 const uglify = require('./uglify');
 const babel = require('./babel');
 
-const out = './dist';
+const out = join(__dirname, '../dist');
 const exclude = /(node_modules|bower_components)/;
 
 const env = process.env.NODE_ENV || 'development';
@@ -39,8 +40,7 @@ module.exports = {
 	},
 	output: {
 		path: out,
-		filename: '[name].[chunkhash].js',
-		publicPath: '/assets'
+		filename: '[name].[chunkhash].js'
 	},
 	module: {
 		rules: [{

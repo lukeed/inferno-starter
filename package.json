@@ -12,7 +12,7 @@
   "scripts": {
     "build": "webpack -p --config config/webpack",
     "start": "serve -s dist",
-    "watch": "webpack --config config/webpack"
+    "watch": "webpack-dev-server --config config/webpack"
   },
   "dependencies": {
     "inferno": "^1.0.3"
@@ -32,6 +32,7 @@
     "style-loader": "^0.13.1",
     "sw-precache-webpack-plugin": "^0.7.1",
     "v8-lazy-parse-webpack-plugin": "^0.3.0",
-    "webpack": "beta"
+    "webpack": "beta",
+    "webpack-dev-server": "beta"
   }
 }
