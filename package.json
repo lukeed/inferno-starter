@@ -18,6 +18,7 @@
     "inferno": "^1.0.4"
   },
   "devDependencies": {
+    "autoprefixer": "^6.6.1",
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-plugin-inferno": "^1.4.0",
@@ -30,6 +31,7 @@
     "extract-text-webpack-plugin": "beta",
     "html-webpack-plugin": "^2.25.0",
     "node-sass": "^4.1.1",
+    "postcss-loader": "^1.2.1",
     "sass-loader": "^4.1.1",
     "serve": "^2.1.2",
     "style-loader": "^0.13.1",
