@@ -4,6 +4,7 @@ const V8LazyParse = require('v8-lazy-parse-webpack-plugin');
 const ExtractText = require('extract-text-webpack-plugin');
 const SWPrecache = require('sw-precache-webpack-plugin');
 const Clean = require('clean-webpack-plugin');
+const Copy = require('copy-webpack-plugin');
 const HTML = require('html-webpack-plugin');
 
 const uglify = require('./uglify');
@@ -14,6 +15,7 @@ const isProd = (env === 'production');
 // base plugins array
 const plugins = [
 	new Clean(['dist'], {root: join(__dirname, '..')}),
+	new Copy([{context: 'src/static/', from: '**/*.*'}]),
 	new V8LazyParse(),
 	new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify(env)}),
 	new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
