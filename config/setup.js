@@ -1,3 +1,4 @@
+const { join } = require('path');
 const webpack = require('webpack');
 const V8LazyParse = require('v8-lazy-parse-webpack-plugin');
 const ExtractText = require('extract-text-webpack-plugin');
@@ -12,7 +13,7 @@ const isProd = (env === 'production');
 
 // base plugins array
 const plugins = [
-	new Clean(['dist']),
+	new Clean(['dist'], {root: join(__dirname, '..')}),
 	new V8LazyParse(),
 	new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify(env)}),
 	new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
