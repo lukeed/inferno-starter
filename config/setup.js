@@ -26,7 +26,12 @@ const plugins = [
 		options: {
 			postcss: [
 				require('autoprefixer')({browsers: ['last 3 version']})
-			]
+			],
+			sassLoader: {
+				includePaths: [
+					join(root, 'src', 'style')
+				]
+			}
 		}
 	})
 ];
