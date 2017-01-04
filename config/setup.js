@@ -9,24 +9,26 @@ const HTML = require('html-webpack-plugin');
 
 const uglify = require('./uglify');
 
+const root = join(__dirname, '..');
 const env = process.env.NODE_ENV || 'development';
 const isProd = (env === 'production');
 
 // base plugins array
 const plugins = [
-	new Clean(['dist'], {root: join(__dirname, '..')}),
-	new Copy([{context: 'src/static/', from: '**/*.*'}]),
 	new V8LazyParse(),
-	new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify(env)}),
+	new Clean(['dist'], {root: root}),
+	new Copy([{context: 'src/static/', from: '**/*.*'}]),
 	new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
+	new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify(env)}),
+	new webpack.NamedModulesPlugin(),
 	new HTML({template: 'src/index.html'})
 ];
 
 if (isProd) {
 	plugins.push(
 		new webpack.LoaderOptionsPlugin({minimize: true, debug: false}),
-		new ExtractText('styles.[hash].css'),
 		new webpack.optimize.UglifyJsPlugin(uglify),
+		new ExtractText('styles.[hash].css'),
 		new SWPrecache({
 			cacheId: 'inferno-starter',
 			filename: 'service-worker.js',
