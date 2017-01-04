@@ -26,11 +26,11 @@ module.exports = {
 			loader: 'babel-loader',
 			options: babel
 		}, {
-			test: /\.s(a|c)ss$/,
+			test: /\.(sass|scss)$/,
 			loader: isProd ? ExtractText.extract({
 				fallbackLoader: 'style-loader',
-				loader: ['css-loader', 'postcss-loader', 'sass-loader']
-			}) : ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+				loader: 'css-loader!postcss-loader!sass-loader'
+			}) : 'style-loader!css-loader!postcss-loader!sass-loader'
 		}]
 	},
 	plugins: plugins,
