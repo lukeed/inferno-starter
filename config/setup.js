@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const V8LazyParse = require('v8-lazy-parse-webpack-plugin');
 const ExtractText = require('extract-text-webpack-plugin');
 const SWPrecache = require('sw-precache-webpack-plugin');
+const Dashboard = require('webpack-dashboard/plugin');
 const Clean = require('clean-webpack-plugin');
 const Copy = require('copy-webpack-plugin');
 const HTML = require('html-webpack-plugin');
@@ -52,7 +53,8 @@ if (isProd) {
 } else {
 	// dev only
 	plugins.push(
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		new Dashboard()
 	);
 }
 
