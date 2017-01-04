@@ -26,11 +26,13 @@ const plugins = [
 	new webpack.LoaderOptionsPlugin({
 		options: {
 			postcss: [
-				require('autoprefixer')({browsers: ['last 3 version']})
+				require('autoprefixer')({
+					browsers: ['last 3 version']
+				})
 			],
 			sassLoader: {
 				includePaths: [
-					join(root, 'src', 'style')
+					join(root, 'src', 'styles')
 				]
 			}
 		}
