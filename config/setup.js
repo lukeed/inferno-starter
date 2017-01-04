@@ -32,7 +32,7 @@ if (isProd) {
 			filename: 'service-worker.js',
 			dontCacheBustUrlsMatching: /./,
 			navigateFallback: 'index.html',
-			staticFileGlobsIgnorePatterns: [/\.(html|map)$/]
+			staticFileGlobsIgnorePatterns: [/\.map$/]
 		})
 	);
 } else {
