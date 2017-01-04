@@ -15,7 +15,7 @@
     "watch": "webpack-dev-server --config config/webpack"
   },
   "dependencies": {
-    "inferno": "^1.0.4"
+    "inferno": "^1.0.5",
   },
   "devDependencies": {
     "autoprefixer": "^6.6.1",
