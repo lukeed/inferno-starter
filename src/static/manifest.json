@@ -4,16 +4,16 @@
   "start_url": "/?homescreen=1",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#f2f2f2",
-  "theme_color": "#673ab8",
+  "background_color": "#FAFAFA",
+  "theme_color": "#E53935",
   "icons": [{
-    "src": "icon/android-chrome-192x192.png",
+    "src": "icon/android-chrome-144x144.png",
     "type": "image/png",
     "sizes": "192x192"
   },
   {
-    "src": "icon/android-chrome-512x512.png",
+    "src": "icon/android-chrome-192x192.png",
     "type": "image/png",
-    "sizes": "512x512"
+    "sizes": "192x192"
   }]
 }
