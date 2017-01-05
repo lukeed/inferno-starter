@@ -1,6 +1,6 @@
 {
-  "name": "Fly Kit: Preact",
-  "short_name": "fly-preact",
+  "name": "Inferno Starter",
+  "short_name": "inferno",
   "start_url": "/?homescreen=1",
   "display": "standalone",
   "orientation": "portrait",

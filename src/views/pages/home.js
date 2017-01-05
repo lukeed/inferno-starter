@@ -25,6 +25,7 @@ export default function (props) {
 					<li>Asset Versioning (aka "cache-busting")</li>
 					<li>ES2015 (ES6) and ES2016 (ES7) support</li>
 					<li>Webpack Bundle Analysis (via `webpack-dashboard`)</li>
+					<li>Hot Module Replacement (HMR) for all files</li>
 				</ul>
 			</Card>
 		</div>

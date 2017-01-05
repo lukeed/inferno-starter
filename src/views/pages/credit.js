@@ -29,6 +29,10 @@ const links = [{
 	name: 'zeit/now',
 	desc: 'Free (OSS) realtime global deployments',
 	href: 'https://zeit.co/now'
+}, {
+	name: 'zeit/serve',
+	desc: 'Single-command HTTP directory listing and file serving',
+	href: 'https://github.com/zeit/serve'
 }];
 
 export default function (props) {
