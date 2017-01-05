@@ -42,3 +42,11 @@ $header-height: 7 * $base-unit
 			&:hover,
 			&:active
 				background: rgba($white, 0.3)
+
+	@media screen and (max-width: 401px)
+		nav a
+			padding: 0 $base-spacing/2
+			min-width: $base-spacing*2
+	@media screen and (max-width: 321px)
+		h1
+			font-size: 18px
