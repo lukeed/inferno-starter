@@ -30,6 +30,9 @@ npm start
 * ES2015 (ES6) and ES2016 (ES7) support
 * Webpack Bundle Analysis (see [dashboard](#dashboard))
 * Hot Module Replacement (HMR) for all files
+* [Lighthouse](https://github.com/GoogleChrome/lighthouse) certified
+
+  ![lightouse](src/static/img/lighthouse.jpg)
 
 ## Development
 
