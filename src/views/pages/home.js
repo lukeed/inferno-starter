@@ -1,7 +1,6 @@
 import Inferno from 'inferno';
 import { Link } from 'inferno-router';
 import Card from '../tags/card';
-import './home.sass';
 
 export default function (props) {
 	return (

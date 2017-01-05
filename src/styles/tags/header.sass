@@ -2,8 +2,7 @@
  * Nav / Header
  */
 
-@import 'vars'
-@import 'mixins'
+$header-height: 7 * $base-unit
 
 .header
 	position: fixed
@@ -19,7 +18,7 @@
 	h1
 		float: left
 		margin: 0
-		padding: 0 15px
+		padding: 0 $base-spacing
 		font-size: 24px
 		line-height: $header-height
 		font-weight: 400
@@ -33,13 +32,13 @@
 			display: inline-block
 			height: $header-height
 			line-height: $header-height
-			padding: 0 15px
+			padding: 0 $base-spacing
 			text-align: center
 			min-width: 50px
 			background: rgba($white, 0)
 			will-change: background-color
 			text-decoration: none
-			color: md-color('grey', '100')
+			color: $offwhite
 			&:hover,
 			&:active
 				background: rgba($white, 0.3)

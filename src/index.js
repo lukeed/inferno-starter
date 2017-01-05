@@ -1,8 +1,8 @@
 import Inferno from 'inferno';
 import { Router } from 'inferno-router';
 import { createBrowserHistory } from 'history';
-import './index.sass';
 import views from './views';
+import './index.sass';
 
 const history = createBrowserHistory();
 

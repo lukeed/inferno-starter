@@ -29,12 +29,7 @@ const plugins = [
 				require('autoprefixer')({
 					browsers: ['last 3 version']
 				})
-			],
-			sassLoader: {
-				includePaths: [
-					join(root, 'src', 'styles')
-				]
-			}
+			]
 		}
 	})
 ];
