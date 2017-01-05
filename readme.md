@@ -6,7 +6,7 @@ Using `inferno-starter` will kickstart your next application! :100: It is design
 
 > :triangular_flag_on_post: **Important:** This is meant for _client-side_ apps only; there is **no support** included for universal / server-side rendering. I plan to release my own SSR kit shortly, but in the meantime you may [use this](https://github.com/nightwolfz/inferno-starter).
 
-**Please note:** Boilerplate _does not_ incorporate the latest ["css-in-js" or "css modules" techniques](https://github.com/MicheleBertoli/css-in-js). Instead, the more traditional approach is taken wherein `styles` and `scripts` are kept separate. That said, you may **certainly and easily** take that route if desired. :white_check_mark:
+**Please note:** Boilerplate _does not_ incorporate the latest ["css-in-js" or "css modules" technique](https://github.com/MicheleBertoli/css-in-js). Instead, the more traditional approach is taken, wherein `styles` and `scripts` are kept separate. That said, you may **certainly and easily** take that route if desired. :white_check_mark:
 
 ---
 <p align="center">:warning: Boilerplate & commands will evolve as my own development process does. :warning:</p>
@@ -67,7 +67,7 @@ Like [`start`](#start), but will auto-compile & auto-reload the server after any
 
 With [`webpack-dashboard`](https://github.com/FormidableLabs/webpack-dashboard), it's much easier to see what's happening inside your bundles. In addition to de-cluttering your `webpack-dev-server` log, you can quickly make sense of your bundles' `import`s and sizes.
 
-![dashboard](dev-dash.jpg)
+![dashboard](src/static/img/dev-dash.jpg)
 
 The dashboard is meant to be interactive (scrollable). If you are having issues, please see the author's note:
 
