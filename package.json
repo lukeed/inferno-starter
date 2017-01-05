@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "inferno-starter",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "repository": "lukeed/inferno-starter",
   "author": {
