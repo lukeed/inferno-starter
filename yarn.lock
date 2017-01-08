@@ -2448,29 +2448,29 @@ indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
 
-inferno-component@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-1.0.5.tgz#a9605c41d11bcf306e41972fbcc3b56d42d89624"
+inferno-component@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-1.1.1.tgz#33ea8c12f388f227795a10d6f1a517a353ecee7e"
   dependencies:
-    inferno "1.0.5"
+    inferno "1.1.1"
 
-inferno-create-element@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-1.0.5.tgz#fd80e65b76db01b2d888af69bcf6812895a62c4e"
+inferno-create-element@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-1.1.1.tgz#f569aeb78dbaabe738fabb0254b20ff9ee5c4678"
   dependencies:
-    inferno "1.0.5"
+    inferno "1.1.1"
 
-inferno-router@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/inferno-router/-/inferno-router-1.0.5.tgz#149fe7b81482da5bc08d815ad1087c2ce6757534"
+inferno-router@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/inferno-router/-/inferno-router-1.1.1.tgz#974e2ee13d2ba01e0011576af0f4ec1e07a1e947"
   dependencies:
-    inferno "1.0.5"
-    inferno-component "1.0.5"
-    inferno-create-element "1.0.5"
+    inferno "1.1.1"
+    inferno-component "1.1.1"
+    inferno-create-element "1.1.1"
 
-inferno@1.0.5, inferno@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.0.5.tgz#0bc571baefa05f0960c2e99bb4cb741e1c1418f7"
+inferno@1.1.1, inferno@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.1.1.tgz#4432a162435fb5fa855cea5b905206fb8b011ee2"
 
 inflight@^1.0.4:
   version "1.0.6"
