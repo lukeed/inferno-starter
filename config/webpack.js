@@ -29,8 +29,8 @@ module.exports = {
 		}, {
 			test: /\.(sass|scss)$/,
 			loader: isProd ? ExtractText.extract({
-				fallbackLoader: 'style-loader',
-				loader: 'css-loader!postcss-loader!sass-loader'
+				fallback: 'style-loader',
+				use: 'css-loader!postcss-loader!sass-loader'
 			}) : 'style-loader!css-loader!postcss-loader!sass-loader'
 		}]
 	},
