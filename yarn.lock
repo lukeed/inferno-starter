@@ -461,12 +461,12 @@ babel-plugin-check-es2015-constants@^6.22.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-inferno@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-inferno/-/babel-plugin-inferno-3.1.0.tgz#7eb4ed85a578f22191c108c401aabcebaae27ae8"
+babel-plugin-inferno@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-inferno/-/babel-plugin-inferno-3.2.0.tgz#62ae1ac223e74e0d54f29fb196e06e358250d82a"
   dependencies:
     babel-plugin-syntax-jsx "^6.18.0"
-    inferno-vnode-flags "1.5.1"
+    inferno-vnode-flags "3.0.0"
 
 babel-plugin-minify-builtins@^0.0.2:
   version "0.0.2"
@@ -1320,6 +1320,12 @@ clipboardy@1.0.2:
   dependencies:
     execa "^0.6.0"
 
+clipboardy@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/clipboardy/-/clipboardy-1.1.0.tgz#e060337afad251fce05456d83dd3a5d6dcb3fa6b"
+  dependencies:
+    execa "^0.6.0"
+
 cliui@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
@@ -1767,13 +1773,13 @@ debug@2.2.0, debug@~2.2.0:
   dependencies:
     ms "0.7.1"
 
-debug@2.3.3, debug@^2.1.1:
+debug@2.3.3, debug@^2.1.1, debug@^2.2.0:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.3.3.tgz#40c453e67e6e13c901ddec317af8986cda9eff8c"
   dependencies:
     ms "0.7.2"
 
-debug@2.6.1, debug@^2.2.0, debug@^2.6.0:
+debug@2.6.1, debug@^2.6.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
   dependencies:
@@ -2728,52 +2734,49 @@ indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
 
-inferno-component@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-1.6.2.tgz#d9be05c66d7d81a2bc2f428ddf7596acdc888c3b"
+inferno-component@3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-3.0.3.tgz#d9ae4943c7848262aa8c94d5f4c25c387c3ca8d6"
   dependencies:
-    inferno "^1.6.2"
-    inferno-shared "^1.6.1"
-    inferno-vnode-flags "^1.6.2"
+    inferno "3.0.3"
+    inferno-shared "^3.0.0"
+    inferno-vnode-flags "^3.0.0"
 
-inferno-create-element@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-1.6.2.tgz#210c2e00a85048eeb150df7fe0c6e9d4da4e572e"
+inferno-create-element@3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-3.0.3.tgz#9531d84a3af497a2c6b866d9591197c03f2cd1ce"
   dependencies:
-    inferno "^1.6.2"
-    inferno-component "^1.6.2"
-    inferno-shared "^1.6.1"
-    inferno-vnode-flags "^1.6.2"
+    inferno "3.0.3"
+    inferno-component "3.0.3"
+    inferno-shared "^3.0.0"
+    inferno-vnode-flags "^3.0.0"
 
-inferno-router@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/inferno-router/-/inferno-router-1.6.2.tgz#e8e944b1f2cc9dfa13596c76338df78134082af2"
+inferno-router@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/inferno-router/-/inferno-router-3.0.3.tgz#06aba71528ae5e573f21daddbb2cf37a3abc2b16"
   dependencies:
-    inferno "^1.6.2"
-    inferno-component "^1.6.2"
-    inferno-create-element "^1.6.2"
-    inferno-shared "^1.6.1"
-    inferno-vnode-flags "^1.6.2"
+    history "^4.6.1"
+    inferno "3.0.3"
+    inferno-component "3.0.3"
+    inferno-create-element "3.0.3"
+    inferno-shared "^3.0.0"
+    inferno-vnode-flags "^3.0.0"
     path-to-regexp-es6 "0.0.2"
 
-inferno-shared@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-1.6.1.tgz#6ff7a8eacc254b766c930720916130c3c0c62bf3"
+inferno-shared@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-3.0.0.tgz#daaeaf1b52803ab0572c7765ccfcfb925cfe8272"
 
-inferno-vnode-flags@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-1.5.1.tgz#3b1b54ee5e9f167863b89e6bee1b19fd3941329f"
+inferno-vnode-flags@3.0.0, inferno-vnode-flags@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-3.0.0.tgz#f396390f3dafae3b76eea04d04eed6cf2004473b"
 
-inferno-vnode-flags@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-1.6.2.tgz#12410f4f26eda30a7a7374bba0cafaed495bcc19"
-
-inferno@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.6.2.tgz#355bd475d348143737f8197affb865aa9bc06ad5"
+inferno@3.0.3, inferno@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-3.0.3.tgz#603bb1ad36d3950bc6978f5d6432e30867beb044"
   dependencies:
-    inferno-shared "^1.6.1"
-    inferno-vnode-flags "^1.6.2"
+    inferno-shared "^3.0.0"
+    inferno-vnode-flags "^3.0.0"
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -3649,11 +3652,11 @@ oauth-sign@~0.8.1:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"
 
-object-assign@4.1.0, object-assign@^4.0.1, object-assign@^4.1.0:
+object-assign@4.1.0, object-assign@^4.0.1:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.0.tgz#7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0"
 
-object-assign@^4.1.1:
+object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
@@ -3860,15 +3863,15 @@ path-to-regexp-es6@0.0.2:
   dependencies:
     path-to-regexp "*"
 
-path-to-regexp@*, path-to-regexp@0.1.7:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
-
-path-to-regexp@^1.0.1:
+path-to-regexp@*, path-to-regexp@^1.0.1:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-1.7.0.tgz#59fde0f435badacba103a84e9d3bc64e96b9937d"
   dependencies:
     isarray "0.0.1"
+
+path-to-regexp@0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
 
 path-type@2.0.0:
   version "2.0.0"
@@ -4180,16 +4183,7 @@ postcss-zindex@^2.0.1:
     postcss "^5.0.4"
     uniqs "^2.0.0"
 
-postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.2, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.6, postcss@^5.0.8:
-  version "5.2.8"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.8.tgz#05720c49df23c79bda51fd01daeb1e9222e94390"
-  dependencies:
-    chalk "^1.1.3"
-    js-base64 "^2.1.9"
-    source-map "^0.5.6"
-    supports-color "^3.1.2"
-
-postcss@^5.2.15, postcss@^5.2.16:
+postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.2, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.6, postcss@^5.0.8, postcss@^5.2.15, postcss@^5.2.16:
   version "5.2.16"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.16.tgz#732b3100000f9ff8379a48a53839ed097376ad57"
   dependencies:
@@ -4657,16 +4651,16 @@ serve-static@~1.11.1:
     parseurl "~1.3.1"
     send "0.14.1"
 
-serve@^5.1.2:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/serve/-/serve-5.1.2.tgz#d8ed66f54e037184dd413a5b99761674860d7e08"
+serve@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/serve/-/serve-5.1.3.tgz#8a7d56f2ae56e40eccb10023c19a3edadc676234"
   dependencies:
     args "2.4.1"
     basic-auth "1.1.0"
     bluebird "3.5.0"
     boxen "1.0.0"
     chalk "1.1.3"
-    clipboardy "1.0.2"
+    clipboardy "1.1.0"
     dargs "5.1.0"
     detect-port "1.1.1"
     filesize "3.5.6"
@@ -4987,7 +4981,7 @@ supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
 
-supports-color@^3.1.0, supports-color@^3.1.1, supports-color@^3.1.2:
+supports-color@^3.1.0, supports-color@^3.1.1:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-3.1.2.tgz#72a262894d9d408b956ca05ff37b2ed8a6e2a2d5"
   dependencies:
@@ -5147,7 +5141,7 @@ type-is@~1.6.13:
     media-typer "0.3.0"
     mime-types "~2.1.13"
 
-uglify-js@2.7.x, uglify-js@^2.6:
+uglify-js@2.7.x:
   version "2.7.5"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.7.5.tgz#4612c0c7baaee2ba7c487de4904ae122079f2ca8"
   dependencies:
@@ -5156,7 +5150,7 @@ uglify-js@2.7.x, uglify-js@^2.6:
     uglify-to-browserify "~1.0.0"
     yargs "~3.10.0"
 
-uglify-js@^2.8.5:
+uglify-js@^2.6, uglify-js@^2.8.5:
   version "2.8.21"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.21.tgz#1733f669ae6f82fc90c7b25ec0f5c783ee375314"
   dependencies:
