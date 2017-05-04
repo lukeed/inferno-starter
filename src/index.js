@@ -6,11 +6,9 @@ import './index.sass';
 
 const history = createBrowserHistory();
 
-const App = () => (
+Inferno.render((
 	<Router history={ history }>{ views }</Router>
-);
-
-Inferno.render(App(), document.getElementById('root'));
+), document.getElementById('root'));
 
 if (process.env.NODE_ENV === 'production') {
 	// cache all assets if browser supports serviceworker
