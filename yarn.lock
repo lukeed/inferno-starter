@@ -19,9 +19,13 @@ acorn-dynamic-import@^2.0.0:
   dependencies:
     acorn "^4.0.3"
 
-acorn@^4.0.3, acorn@^4.0.4:
+acorn@^4.0.3:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.4.tgz#17a8d6a7a6c4ef538b814ec9abac2779293bf30a"
+
+acorn@^5.0.0:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.0.3.tgz#c460df08491463f028ccb82eab3730bf01087b3d"
 
 after@0.8.2:
   version "0.8.2"
@@ -100,23 +104,15 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-args@2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/args/-/args-2.4.0.tgz#2e6d5616d4ddbc943d5f1fc1ce2128f9d018f69b"
+args@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/args/-/args-2.6.0.tgz#5f2b310a4831f1181a7bf0d92f81aed32b538eb4"
   dependencies:
-    camelcase "4.0.0"
+    camelcase "4.1.0"
     chalk "1.1.3"
     minimist "1.2.0"
     pkginfo "0.4.0"
-
-args@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/args/-/args-2.4.1.tgz#e409e5d73eaf1185b7b29acb3cc41e3b650dea77"
-  dependencies:
-    camelcase "4.0.0"
-    chalk "1.1.3"
-    minimist "1.2.0"
-    pkginfo "0.4.0"
+    string-similarity "1.1.0"
 
 arr-diff@^2.0.0:
   version "2.0.0"
@@ -1225,9 +1221,9 @@ camelcase-keys@^2.0.0:
     camelcase "^2.0.0"
     map-obj "^1.0.0"
 
-camelcase@4.0.0, camelcase@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.0.0.tgz#8b0f90d44be5e281b903b9887349b92595ef07f2"
+camelcase@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
 camelcase@^1.0.2:
   version "1.2.1"
@@ -1240,6 +1236,10 @@ camelcase@^2.0.0, camelcase@^2.1.0:
 camelcase@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
+
+camelcase@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.0.0.tgz#8b0f90d44be5e281b903b9887349b92595ef07f2"
 
 caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   version "1.0.30000649"
@@ -1313,12 +1313,6 @@ clean-webpack-plugin@^0.1.16:
 cli-boxes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/cli-boxes/-/cli-boxes-1.0.0.tgz#4fa917c3e59c94a004cd61f8ee509da651687143"
-
-clipboardy@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/clipboardy/-/clipboardy-1.0.2.tgz#4772407d73a894a41813fa020ce1c501aa6bbdcc"
-  dependencies:
-    execa "^0.6.0"
 
 clipboardy@1.1.0:
   version "1.1.0"
@@ -1647,9 +1641,9 @@ css-color-names@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
 
-css-loader@^0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-0.28.0.tgz#417cfa9789f8cde59a30ccbf3e4da7a806889bad"
+css-loader@^0.28.1:
+  version "0.28.1"
+  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-0.28.1.tgz#220325599f8f00452d9ceb4c3ca6c8a66798642d"
   dependencies:
     babel-code-frame "^6.11.0"
     css-selector-tokenizer "^0.7.0"
@@ -1662,6 +1656,7 @@ css-loader@^0.28.0:
     postcss-modules-local-by-default "^1.0.1"
     postcss-modules-scope "^1.0.0"
     postcss-modules-values "^1.1.0"
+    postcss-value-parser "^3.3.0"
     source-list-map "^0.1.7"
 
 css-select@^1.1.0:
@@ -2385,6 +2380,10 @@ get-caller-file@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.2.tgz#f702e63127e7e231c160a80c1554acb70d5047e5"
 
+get-port@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/get-port/-/get-port-3.1.0.tgz#ef01b18a84ca6486970ff99e54446141a73ffd3e"
+
 get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
@@ -3073,7 +3072,7 @@ json3@3.3.2, json3@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/json3/-/json3-3.3.2.tgz#3c0434743df93e2f5c42aee7b19bcb483575f4e1"
 
-json5@^0.5.0:
+json5@^0.5.0, json5@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
 
@@ -3235,7 +3234,7 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "~3.0.0"
 
-lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.2.0, lodash@^4.3.0:
+lodash@^4.0.0, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.2.0, lodash@^4.3.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -3339,17 +3338,17 @@ micro-compress@1.0.0:
   dependencies:
     compression "^1.6.2"
 
-micro@7.3.0:
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/micro/-/micro-7.3.0.tgz#31e6174ae44968964a770724f2ce488e99a8a652"
+micro@7.3.2:
+  version "7.3.2"
+  resolved "https://registry.yarnpkg.com/micro/-/micro-7.3.2.tgz#c6ff82fad6b045cfe04cbc673834ef1fc3dc13aa"
   dependencies:
-    args "2.4.0"
+    args "2.6.0"
     async-to-gen "1.3.2"
     bluebird "3.5.0"
     boxen "1.0.0"
     chalk "1.1.3"
-    clipboardy "1.0.2"
-    detect-port "1.1.1"
+    clipboardy "1.1.0"
+    get-port "3.1.0"
     ip "1.1.5"
     is-async-supported "1.2.0"
     isstream "0.1.2"
@@ -4641,11 +4640,11 @@ serve-static@~1.11.1:
     parseurl "~1.3.1"
     send "0.14.1"
 
-serve@^5.1.3:
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/serve/-/serve-5.1.3.tgz#8a7d56f2ae56e40eccb10023c19a3edadc676234"
+serve@^5.1.4:
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/serve/-/serve-5.1.4.tgz#acbb5a96fbce87a1add9b911a9dc8cd5b172c600"
   dependencies:
-    args "2.4.1"
+    args "2.6.0"
     basic-auth "1.1.0"
     bluebird "3.5.0"
     boxen "1.0.0"
@@ -4657,7 +4656,7 @@ serve@^5.1.3:
     fs-promise "2.0.2"
     handlebars "4.0.6"
     ip "1.1.5"
-    micro "7.3.0"
+    micro "7.3.2"
     micro-compress "1.0.0"
     mime-types "2.1.15"
     node-version "1.0.0"
@@ -4908,6 +4907,12 @@ strict-uri-encode@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz#279b225df1d582b1f54e65addd4352e18faa0713"
 
+string-similarity@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/string-similarity/-/string-similarity-1.1.0.tgz#3c66498858a465ec7c40c7d81739bbd995904914"
+  dependencies:
+    lodash "^4.13.1"
+
 string-width@^1.0.1, string-width@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-1.0.2.tgz#118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3"
@@ -4957,9 +4962,9 @@ strip-json-comments@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-1.0.4.tgz#1e15fbcac97d3ee99bf2d73b4c656b082bbafb91"
 
-style-loader@^0.16.1:
-  version "0.16.1"
-  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.16.1.tgz#50e325258d4e78421dd9680636b41e8661595d10"
+style-loader@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.17.0.tgz#e8254bccdb7af74bd58274e36107b4d5ab4df310"
   dependencies:
     loader-utils "^1.0.2"
 
@@ -4995,9 +5000,9 @@ svgo@^0.7.0:
     sax "~1.2.1"
     whet.extend "~0.9.9"
 
-sw-precache-webpack-plugin@^0.9.1:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/sw-precache-webpack-plugin/-/sw-precache-webpack-plugin-0.9.1.tgz#2381ff706fbb6cabdb20a20337de8e58fb49a2a7"
+sw-precache-webpack-plugin@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/sw-precache-webpack-plugin/-/sw-precache-webpack-plugin-0.11.0.tgz#cff48e5f924bd8c4a71d96b66453d4ebf683427c"
   dependencies:
     del "^2.2.2"
     sw-precache "^5.0.0"
@@ -5339,9 +5344,9 @@ wbuf@^1.1.0, wbuf@^1.4.0:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-webpack-dashboard@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/webpack-dashboard/-/webpack-dashboard-0.3.0.tgz#d0fe182a0976a8ff0ea01b0507f29a034cd60a1c"
+webpack-dashboard@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/webpack-dashboard/-/webpack-dashboard-0.4.0.tgz#9e1d516ee31c8c5e4436148dc3eb09efe9e0c55f"
   dependencies:
     blessed "^0.1.81"
     commander "^2.9.0"
@@ -5350,18 +5355,18 @@ webpack-dashboard@^0.3.0:
     socket.io "^1.4.8"
     socket.io-client "^1.4.8"
 
-webpack-dev-middleware@^1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-1.9.0.tgz#a1c67a3dfd8a5c5d62740aa0babe61758b4c84aa"
+webpack-dev-middleware@^1.10.2:
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-1.10.2.tgz#2e252ce1dfb020dbda1ccb37df26f30ab014dbd1"
   dependencies:
     memory-fs "~0.4.1"
     mime "^1.3.4"
     path-is-absolute "^1.0.0"
     range-parser "^1.0.3"
 
-webpack-dev-server@^2.4.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-2.4.2.tgz#cf595d6b40878452b6d2ad7229056b686f8a16be"
+webpack-dev-server@^2.4.5:
+  version "2.4.5"
+  resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-2.4.5.tgz#31384ce81136be1080b4b4cde0eb9b90e54ee6cf"
   dependencies:
     ansi-html "0.0.7"
     chokidar "^1.6.0"
@@ -5378,7 +5383,7 @@ webpack-dev-server@^2.4.2:
     spdy "^3.4.1"
     strip-ansi "^3.0.0"
     supports-color "^3.1.1"
-    webpack-dev-middleware "^1.9.0"
+    webpack-dev-middleware "^1.10.2"
     yargs "^6.0.0"
 
 webpack-sources@^0.1.0:
@@ -5395,11 +5400,11 @@ webpack-sources@^0.2.3:
     source-list-map "^1.1.1"
     source-map "~0.5.3"
 
-webpack@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-2.3.3.tgz#eecc083c18fb7bf958ea4f40b57a6640c5a0cc78"
+webpack@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-2.5.0.tgz#5a17089f8d0e43442e606d6cf9b2a146c8ed9911"
   dependencies:
-    acorn "^4.0.4"
+    acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"
     ajv "^4.7.0"
     ajv-keywords "^1.1.1"
@@ -5407,6 +5412,7 @@ webpack@^2.3.3:
     enhanced-resolve "^3.0.0"
     interpret "^1.0.0"
     json-loader "^0.5.4"
+    json5 "^0.5.1"
     loader-runner "^2.3.0"
     loader-utils "^0.2.16"
     memory-fs "~0.4.1"
