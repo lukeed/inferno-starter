@@ -10,7 +10,7 @@
     "url": "https://lukeed.com"
   },
   "scripts": {
-    "build": "NODE_ENV=production webpack --config config/webpack",
+    "build": "webpack --env.production --config config/webpack",
     "start": "serve dist -s",
     "watch": "webpack-dashboard -- webpack-dev-server --config config/webpack"
   },
